@@ -188,7 +188,7 @@ document.addEventListener("click", async function (event) {
     }
 
     if (remainingMistakes <= 0) {
-      alert("You cannot guess anymore!");
+      paragraphElement.textContent = "You Failed The Connections Game!";
       const clickableDivs = divContainer.querySelectorAll(".clickable-div");
       clickableDivs.forEach(function (clickableDiv) {
         clickableDiv.classList.add("fade-out");
