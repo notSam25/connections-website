@@ -1,0 +1,179 @@
+/* Reset default margin on body and html elements */
+body,
+html {
+  margin: 0;
+}
+
+/* Responsive navigation style for screens under 768px */
+@media screen and (max-width: 768px) {
+  nav {
+    font-size: 14px;
+  }
+}
+
+/* Navigation bar styles */
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0deg, #ccc, transparent);
+  border-image-slice: 1;
+  background-color: white;
+}
+
+nav p {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #6f6f6f;
+}
+
+/* Main container for connections */
+.connections-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.connections-container-title {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+}
+
+.connections-container-title h1 {
+  font-family: "Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+.connections-container-title p {
+  color: grey;
+  font-size: 14px;
+  margin-top: -20px;
+  align-self: center;
+}
+
+.connections-container-separator {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Button container for the game */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clickable div styles */
+.clickable-div {
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  margin: 0 10px 10px 0; /* Adjusted margin properties */
+  background-color: #efefe6;
+  color: black;
+  font-family: "Arial Black, Arial Bold, Gadget, sans-serif";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26.4px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.clickable-div.fade-out {
+  opacity: 0;
+}
+
+/* Container for each row of clickable divs */
+.row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connections-container-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connections-container-controls button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.connections-container-controls button:hover,
+.connections-container-controls button:focus {
+  background-color: #07c;
+}
+
+.connections-container-controls button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.connections-container-controls button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+.connections-container-controls p {
+  cursor: pointer;
+  user-select: none;
+  font-family: "Arial Black, Arial Bold, Gadget, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.4px;
+
+  margin-right: 1vh;
+}

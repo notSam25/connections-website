@@ -1,0 +1,20 @@
+{
+  "connections": [
+    {
+      "connectionNumber": 1,
+      "words": ["apple", "banana", "cherry", "grape"]
+    },
+    {
+      "connectionNumber": 2,
+      "words": ["dog", "cat", "rabbit", "hamster"]
+    },
+    {
+      "connectionNumber": 3,
+      "words": ["car", "bus", "bike", "train"]
+    },
+    {
+      "connectionNumber": 4,
+      "words": ["red", "blue", "green", "yellow"]
+    }
+  ]
+}
